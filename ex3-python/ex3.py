@@ -92,7 +92,7 @@ def predictOneVsAll(all_theta, X):
     
         
 np.set_printoptions(suppress=True)
-data = loadmat("..\machine-learning-ex3\ex3\ex3Data1.mat")
+data = loadmat("data\ex3Data1.mat")
 X = data['X']
 y = data['y']
 #print(X.shape)
@@ -101,7 +101,7 @@ y = data['y']
 m = np.size(X, 0)
 rand_indices = np.random.permutation(m)
 sel = np.take(X, rand_indices[0:100], 0)
-#displayData(sel)
+displayData(sel)
 
 #theta_t = np.array([-2, -1, 1, 2]).reshape(4,1)
 #print(theta_t)
