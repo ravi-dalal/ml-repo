@@ -17,7 +17,7 @@ def visualizeBoundary(X, y, model):
     
     #print(vals)
     # Plot the SVM boundary
-    CS = plt.contour(X1, X2, vals, colors="blue")
-    print(CS.levels)
+    CS = plt.contour(X1, X2, vals)
+    print("Levels = ", CS.levels)
     plt.clabel(CS, fmt = '%.2f', colors = 'k', fontsize=10)
     plt.show()
