@@ -16,7 +16,7 @@ np.set_printoptions(suppress=True)
 np.set_printoptions(formatter={'float': '{: 0.3f}'.format})
 
 # =========== Part 1: Loading and Visualizing Data =============
-data = loadmat("data\ex5data1.mat")
+data = loadmat("data/ex5data1.mat")
 X = data['X']
 y = data['y']
 Xval = data['Xval']

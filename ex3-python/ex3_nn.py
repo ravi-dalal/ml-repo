@@ -18,7 +18,7 @@ np.set_printoptions(suppress=True)
 
 # Load Training Data
 print('Loading and Visualizing Data ...\n')
-data = loadmat("data\ex3Data1.mat")
+data = loadmat("data/ex3Data1.mat")
 X = data['X']
 y = data['y']
 #print(y)
@@ -29,7 +29,7 @@ plt, h, display_array = displayData(sel)
 #plt.show()
 
 # ================ Part 2: Loading Pameters ================
-weights = loadmat("data\ex3weights.mat")
+weights = loadmat("data/ex3weights.mat")
 theta1 = weights['Theta1']
 theta2 = weights['Theta2']
 #print(X.shape)

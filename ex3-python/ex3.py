@@ -18,7 +18,7 @@ np.set_printoptions(suppress=True)
 
 # =========== Part 1: Loading and Visualizing Data =============
 print('Loading and Visualizing Data ...\n')
-data = loadmat("data\ex3Data1.mat")
+data = loadmat("data/ex3Data1.mat")
 X = data['X']
 y = data['y']
 #print(X.shape)
