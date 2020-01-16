@@ -40,14 +40,17 @@ def processEmail(email_contents):
     # Handle $ sign
     email_contents = re.sub('[$]+', 'dollar', email_contents)
 
+    # Tokenize and get rid of any punctuation
+#    [str, email_contents] = ...
+#       strtok(email_contents, ...
+#              [' @$/#.-:&*+=[]?!(){},''">_<;%' char(10) char(13)]);
+    email_contents = re.split(r'[@$/#.-:&\*\+=\[\]?!(){},\'\'\">_<;%\s]+', email_contents)
+#    print(email_contents)
+
     # Output the email to screen as well
-    print('\n==== Processed Email ====\n\n')
+    #print('\n==== Processed Email ====\n\n')
     # Process file
     l = 0
-
-    # Split and also get rid of any punctuation
-    # regex may need further debugging...
-    email_contents = re.split(r'[@$/#.-:&\*\+=\[\]?!(){},\'\'\">_<;%\s\n\r\t]+', email_contents)
     for token in email_contents:
         # Remove any non alphanumeric characters
         token = re.sub('[^a-zA-Z0-9]', '', token)
@@ -66,10 +69,10 @@ def processEmail(email_contents):
         if l + len(token) + 1 > 78:
             print("")
             l = 0
-
-        print('{:s}'.format(token)),
+        print(token)
         l = l + len(token) + 1
 
     # Print footer
-    print('\n\n=========================\n')
+    #print('\n\n=========================\n')
+    
     return word_indices

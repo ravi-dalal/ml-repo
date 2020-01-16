@@ -7,4 +7,5 @@ def getVocabList():
 		#print(i, word)
 		vocabList[word] = int(i)
 	fid.close()
+	
 	return vocabList

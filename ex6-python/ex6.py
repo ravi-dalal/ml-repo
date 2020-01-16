@@ -15,7 +15,7 @@ np.set_printoptions(formatter={'float': '{: 0.3f}'.format})
 
 # =========== Part 1: Loading and Visualizing Data =============
 """
-data1 = loadmat("data\ex6data1.mat")
+data1 = loadmat("data/ex6data1.mat")
 X = data1['X']
 y = data1['y']
 
@@ -36,7 +36,7 @@ sim = gaussianKernel(x1, x2, sigma)
 print('Gaussian Kernel between x1 = [1; 2; 1], x2 = [0; 4; -1], sigma = \n(for sigma = 2, this value should be about 0.324652)\n', sim)
 
 # =============== Part 4: Visualizing Dataset 2 ================
-data2 = loadmat("data\ex6data2.mat")
+data2 = loadmat("data/ex6data2.mat")
 X = data2['X']
 y = data2['y']
 
@@ -51,7 +51,7 @@ visualizeBoundary(X, y, model)
 """
 # =============== Part 6: Visualizing Dataset 3 ================
 
-data3 = loadmat("data\ex6data3.mat")
+data3 = loadmat("data/ex6data3.mat")
 X = data3['X']
 y = data3['y']
 Xval = data3['Xval']
