@@ -1,1 +1,1 @@
-# Python solution for Andrew Ng Coursera Machine Learning course
+# Andrew Ng Coursera Machine Learning course exercises in Python language
